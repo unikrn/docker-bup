@@ -4,7 +4,7 @@ FROM debian:jessie-slim
 
 RUN apt update && \
     apt install -y bup && \
-    rm -rf /var/cahce/apt && \
+    rm -rf /var/cache/apt && \
     rm -rf /var/lib/apt/lists
 
 ENTRYPOINT [ "/usr/bin/bup" ]
